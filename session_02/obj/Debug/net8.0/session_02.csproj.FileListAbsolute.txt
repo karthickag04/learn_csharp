@@ -1,0 +1,14 @@
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02\bin\Debug\net8.0\session_02.exe
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02\bin\Debug\net8.0\session_02.deps.json
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02\bin\Debug\net8.0\session_02.runtimeconfig.json
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02\bin\Debug\net8.0\session_02.dll
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02\bin\Debug\net8.0\session_02.pdb
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02\obj\Debug\net8.0\session_02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02\obj\Debug\net8.0\session_02.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02\obj\Debug\net8.0\session_02.AssemblyInfo.cs
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02\obj\Debug\net8.0\session_02.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02\obj\Debug\net8.0\session_02.dll
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02\obj\Debug\net8.0\refint\session_02.dll
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02\obj\Debug\net8.0\session_02.pdb
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02\obj\Debug\net8.0\session_02.genruntimeconfig.cache
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02\obj\Debug\net8.0\ref\session_02.dll
