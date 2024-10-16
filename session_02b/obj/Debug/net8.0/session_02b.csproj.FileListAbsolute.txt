@@ -1,0 +1,15 @@
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02b\obj\Debug\net8.0\session_02b.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02b\obj\Debug\net8.0\session_02b.AssemblyInfoInputs.cache
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02b\obj\Debug\net8.0\session_02b.AssemblyInfo.cs
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02b\obj\Debug\net8.0\session_02b.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02b\obj\Debug\net8.0\session_02b.sourcelink.json
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02b\bin\Debug\net8.0\session_02b.exe
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02b\bin\Debug\net8.0\session_02b.deps.json
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02b\bin\Debug\net8.0\session_02b.runtimeconfig.json
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02b\bin\Debug\net8.0\session_02b.dll
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02b\bin\Debug\net8.0\session_02b.pdb
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02b\obj\Debug\net8.0\session_02b.dll
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02b\obj\Debug\net8.0\refint\session_02b.dll
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02b\obj\Debug\net8.0\session_02b.pdb
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02b\obj\Debug\net8.0\session_02b.genruntimeconfig.cache
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\session_02b\obj\Debug\net8.0\ref\session_02b.dll
