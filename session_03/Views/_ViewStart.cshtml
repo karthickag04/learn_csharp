@@ -1,0 +1,14 @@
+﻿@{
+    // Get the controller name from the RouteData
+    var controller = ViewContext.RouteData.Values["controller"]?.ToString();
+
+    // Set default layout (for Home)
+    Layout = "~/Views/Shared/_HomeLayout.cshtml";
+
+    // Apply specific layout for Admin controller
+    if (controller == "Admin")
+    {
+        Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    }
+}
+
