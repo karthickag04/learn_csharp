@@ -1,0 +1,7 @@
+Note:
+before you must create LoginModel, AppDbContext and then _LayoutLogin for specific usage.
+
+
+command to run in CMD/Terminal:
+
+dotnet aspnet-codegenerator controller -name LoginController -m LoginModel -dc AppDbContext --relativeFolderPath Controllers --layout _Layout
