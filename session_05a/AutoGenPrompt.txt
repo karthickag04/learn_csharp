@@ -1,0 +1,14 @@
+Note:
+before you must create LoginModel, AppDbContext and then _LayoutLogin for specific usage.
+
+install:
+
+dotnet tool install --global dotnet-aspnet-codegenerator --version 8.0.6
+
+
+
+
+
+command to run in CMD/Terminal:
+
+dotnet aspnet-codegenerator controller -name LoginController -m LoginModel -dc AppDbContext --relativeFolderPath Controllers --layout _Layout
