@@ -1,0 +1,24 @@
+@* Partial View: _AccountMenu.cshtml *@
+@{
+    Layout = null; // You can set the layout if you want this partial to use a layout file
+}
+
+<div class="account-menu">
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="@Url.Action("ChangePassword", "Account")" class="text-decoration-none">
+                <i class="fas fa-key"></i> Change Password
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="@Url.Action("EditProfile", "Account")" class="text-decoration-none">
+                <i class="fas fa-user-edit"></i> Profile Update
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="@Url.Action("DeleteAccount", "Account")" class="text-decoration-none" style="color:red;">
+                <i class="fas fa-user-slash"></i> Delete Account
+            </a>
+        </li>
+    </ul>
+</div>
