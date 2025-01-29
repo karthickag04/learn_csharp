@@ -23,39 +23,12 @@ namespace SchoolApp
             con.ConnectionString = ConfigurationManager.ConnectionStrings["SchoolAppConnection"].ConnectionString;
         }
 
-        private void LoadMenu()
-        {
-            try
-            {
-                conStr();
-                con.Open();
-                cmd.Connection = con;
-                cmd.CommandText = "SELECT menu_id, menuname FROM menus ORDER BY menuname ASC";
-
-                SqlDataAdapter da = new SqlDataAdapter(cmd);
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-
-                rptMenu.DataSource = dt;
-                rptMenu.DataBind();
-            }
-            catch (Exception ex)
-            {
-                Response.Write("<script>alert('Database Error: " + ex.Message + "');</script>");
-            }
-            finally
-            {
-                con.Close();
-            }
-        }
+        
 
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                LoadMenu();
-            }
+          
 
         }
 

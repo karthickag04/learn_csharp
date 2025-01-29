@@ -29,28 +29,7 @@
                         <label for="txtConfirmPassword">Confirm Password:</label>
                         <asp:TextBox ID="txtConfirmPassword" runat="server" CssClass="form-control" TextMode="Password" placeholder="Re-enter Password"></asp:TextBox>
                     </div>
-                    <!-- Display Menus in a Table -->
-                        <div class="form-group">
-                            <h4>Available Menus</h4>
-                            <table class="table table-bordered table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Menu ID</th>
-                                        <th>Menu Name</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <asp:Repeater ID="rptMenu" runat="server">
-                                        <ItemTemplate>
-                                            <tr>
-                                                <td><%# Eval("menu_id") %></td>
-                                                <td><%# Eval("menuname") %></td>
-                                            </tr>
-                                        </ItemTemplate>
-                                    </asp:Repeater>
-                                </tbody>
-                            </table>
-                        </div>
+                   
 
                     <!-- Register Button as LinkButton -->
                     <div class="form-group text-center">
