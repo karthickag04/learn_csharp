@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<queries>
+    <query id="LoginQuery">SELECT username FROM tbl_users WHERE username = @username AND password = @password</query>
+</queries>

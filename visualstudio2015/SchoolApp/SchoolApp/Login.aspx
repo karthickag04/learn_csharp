@@ -22,7 +22,7 @@
 
                     <!-- Login Button as LinkButton -->
                     <div class="form-group text-center">
-                        <asp:LinkButton ID="btnLogin" runat="server" CssClass="btn btn-primary btn-lg" >
+                        <asp:LinkButton ID="btnLogin" runat="server" CssClass="btn btn-primary btn-lg" OnClick="btnLogin_Click" >
                             Login
                         </asp:LinkButton>
                     </div>
