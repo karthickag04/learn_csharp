@@ -64,3 +64,6 @@ C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\visualstudio2
 C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\visualstudio2015\SchoolApp\SchoolApp\obj\Debug\SchoolApp.csprojResolveAssemblyReference.cache
 C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\visualstudio2015\SchoolApp\SchoolApp\obj\Debug\SchoolApp.dll
 C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\visualstudio2015\SchoolApp\SchoolApp\obj\Debug\SchoolApp.pdb
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\visualstudio2015\SchoolApp\SchoolApp\bin\Microsoft.ReportViewer.Common.dll
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\visualstudio2015\SchoolApp\SchoolApp\bin\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\DELL\Documents\TrainerDoc\Programming\csharp\learn_csharp\visualstudio2015\SchoolApp\SchoolApp\bin\Microsoft.ReportViewer.WebForms.DLL

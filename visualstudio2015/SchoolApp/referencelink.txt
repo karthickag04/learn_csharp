@@ -1,0 +1,13 @@
+
+basic ASP web app logic
+https://chatgpt.com/share/67976297-e4c0-800b-bed8-c2d788c05663
+
+
+for sql schema fetch from xml
+https://chatgpt.com/share/679c9f80-4c34-800b-9dc3-1935e3b477aa
+
+
+conversation on dropdown with submenu
+
+https://chatgpt.com/share/679ca88e-8558-800b-bdbc-326eefd6b772
+

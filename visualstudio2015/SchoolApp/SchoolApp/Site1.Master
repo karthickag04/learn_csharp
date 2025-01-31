@@ -31,7 +31,7 @@
                             <a class="nav-link dropdown-toggle text-light" href="#" role="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">Dropdown
                             </a>
 
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <%-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <asp:Repeater ID="rptMenu" runat="server">
                                     <ItemTemplate>
                                         <li>
@@ -41,7 +41,83 @@
                                         </li>
                                     </ItemTemplate>
                                 </asp:Repeater>
+                            </ul>--%>
+                            <%-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <asp:Repeater ID="rptMenu" runat="server">
+                                    <ItemTemplate>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">
+                                                <%# Eval("MenuName") %>
+                                            </a>
+
+                                            <asp:Repeater ID="rptSubMenu" runat="server" DataSource='<%# Eval("SubMenus") %>'>
+                                                <ItemTemplate>
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <a class="dropdown-item" href='<%# "Page.aspx?menu=" + Eval("MenuId") %>'>
+                                                                <%# Eval("MenuName") %>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </ItemTemplate>
+                                            </asp:Repeater>
+                                        </li>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </ul>--%>
+
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <asp:Repeater ID="rptMenu" runat="server">
+                                    <ItemTemplate>
+                                        <li class="nav-item dropdown">
+                                            <!-- Parent Menu Item -->
+                                            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <%# Eval("MenuName") %>
+                                            </a>
+
+                                            <!-- Submenu -->
+                                            <ul class="dropdown-menu">
+                                                <asp:Repeater ID="rptSubMenu" runat="server" DataSource='<%# Eval("SubMenus") %>'>
+                                                    <ItemTemplate>
+                                                        <li>
+                                                            <a class="dropdown-item" href='<%# "Page.aspx?menu=" + Eval("MenuId") %>'>
+                                                                <%# Eval("MenuName") %>
+                                                            </a>
+                                                        </li>
+                                                    </ItemTemplate>
+                                                </asp:Repeater>
+                                            </ul>
+                                        </li>
+                                    </ItemTemplate>
+                                </asp:Repeater>
                             </ul>
+
+                            <%--<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <asp:Repeater ID="rptMenu" runat="server">
+                                    <ItemTemplate>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle text-dark" href="#" role="button" data-bs-toggle="dropdown">
+                                                <%# Eval("MenuName") %>
+                                            </a>
+
+                                            <asp:Repeater ID="rptSubMenu" runat="server" DataSource='<%# Eval("SubMenus") %>'>
+                                                <ItemTemplate>
+                                                    <ul class="dropdown-menu">
+                                                        <li>
+                                                            <a class="dropdown-item" href='<%# "Page.aspx?menu=" + Eval("MenuId") %>'>
+                                                                <%# Eval("MenuName") %>
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                </ItemTemplate>
+                                            </asp:Repeater>
+
+                                        </li>
+                                    </ItemTemplate>
+                                </asp:Repeater>
+                            </ul>--%>
+
+
                         </li>
 
                     </ul>
