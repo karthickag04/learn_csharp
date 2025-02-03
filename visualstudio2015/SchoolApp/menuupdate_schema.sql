@@ -1,34 +1,42 @@
 
 
-drop table menus;
+drop table menus1;
 
 CREATE TABLE menus1 (
     menu_id INT IDENTITY(1,1) PRIMARY KEY,
     menuname NVARCHAR(100) NOT NULL UNIQUE,
-    parent_id INT NULL,  -- New column for parent-child relationships
-    FOREIGN KEY (parent_id) REFERENCES menus1(menu_id) 
+    parent_id INT NULL,
+    FOREIGN KEY (parent_id) REFERENCES menus1(menu_id)
 );
 
 
 
--- Insert Parent Menu (Main Menus)
+-- Parent Menus
 INSERT INTO menus1 (menuname, parent_id) VALUES ('Dashboard', NULL);
 INSERT INTO menus1 (menuname, parent_id) VALUES ('Students', NULL);
 INSERT INTO menus1 (menuname, parent_id) VALUES ('Teachers', NULL);
 INSERT INTO menus1 (menuname, parent_id) VALUES ('Courses', NULL);
 INSERT INTO menus1 (menuname, parent_id) VALUES ('Settings', NULL);
 
--- Insert Submenus (Child Menus for Courses)
-INSERT INTO menus1 (menuname, parent_id) VALUES ('AI', (SELECT menu_id FROM menus1 WHERE menuname='Courses'));
-INSERT INTO menus1 (menuname, parent_id) VALUES ('Fullstack', (SELECT menu_id FROM menus1 WHERE menuname='Courses'));
-INSERT INTO menus1 (menuname, parent_id) VALUES ('Data Science', (SELECT menu_id FROM menus1 WHERE menuname='Courses'));
+-- Child Menus for "Courses"
+INSERT INTO menus1 (menuname, parent_id)
+    VALUES ('AI', (SELECT menu_id FROM menus1 WHERE menuname='Courses'));
+INSERT INTO menus1 (menuname, parent_id)
+    VALUES ('Fullstack', (SELECT menu_id FROM menus1 WHERE menuname='Courses'));
+INSERT INTO menus1 (menuname, parent_id)
+    VALUES ('Data Science', (SELECT menu_id FROM menus1 WHERE menuname='Courses'));
 
 
 
+SELECT menu_id, menuname, parent_id 
+FROM menus1 
+WHERE menuname = 'Courses';
 
 
-
-
+-- Check child menus actually have parent_id = that Courses ID
+SELECT menu_id, menuname, parent_id 
+FROM menus1
+WHERE parent_id = (SELECT menu_id FROM menus1 WHERE menuname='Courses');
 
 
 
