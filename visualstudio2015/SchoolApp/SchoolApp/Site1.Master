@@ -12,7 +12,7 @@
   
   <!-- Custom CSS for nested dropdowns -->
   <style>
-    /* Position nested dropdown menus to appear at the right of their parent */
+    /* Position nested dropdown menus to appear to the right of their parent */
     .dropdown-submenu {
       position: relative;
     }
@@ -59,12 +59,13 @@
                   <ItemTemplate>
                     <!-- 
                          Use "dropdown-submenu" to indicate that this item might have child items.
-                         Remove data-bs-toggle from the nested toggle so that our custom JS controls it.
+                         (The nested link does not use data-bs-toggle so that our custom JS controls it.)
                     -->
                     <li class="dropdown-submenu">
                       <a class="dropdown-item dropdown-toggle text-dark" href="#" role="button">
                         <%# Eval("MenuName") %>
                       </a>
+                      <!-- Render nested submenu regardless; the JS will check if it has items -->
                       <ul class="dropdown-menu">
                         <asp:Repeater ID="rptSubMenu" runat="server">
                           <ItemTemplate>
@@ -149,27 +150,38 @@
           integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
           crossorigin="anonymous"></script>
   
-  <!-- Custom JS to support nested dropdowns -->
+  <!-- Custom JS to support refined nested dropdown behavior -->
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      // Select all anchors inside a .dropdown-submenu (for nested toggling)
+      // For each anchor inside a .dropdown-submenu that acts as a toggle...
       var dropdownSubmenus = document.querySelectorAll('.dropdown-submenu > a.dropdown-toggle');
       dropdownSubmenus.forEach(function (toggleLink) {
         toggleLink.addEventListener('click', function (e) {
-          e.preventDefault();
-          e.stopPropagation(); // Prevent the parent dropdown from closing
-          
-          // Toggle the nested submenu's visibility
+          // Get the submenu element (the next sibling <ul>)
           var submenu = toggleLink.nextElementSibling;
-          if (submenu) {
+          // Check if submenu exists and if it has any child <li> elements.
+          if (submenu && submenu.children.length > 0) {
+            // Close any other open submenus at this level
+            var parentDropdown = toggleLink.closest('.dropdown-menu');
+            if (parentDropdown) {
+              var openSubmenus = parentDropdown.querySelectorAll('.dropdown-menu.show');
+              openSubmenus.forEach(function (openSubmenu) {
+                if (openSubmenu !== submenu) {
+                  openSubmenu.classList.remove('show');
+                }
+              });
+            }
+            // Toggle the current submenu's visibility
             submenu.classList.toggle('show');
+            e.preventDefault();
+            e.stopPropagation();
           }
+          // If no submenu items exist, let the default click action occur (e.g., navigation).
         });
       });
       
-      // Instead of closing every .dropdown-menu, limit it to nested ones.
+      // Close any open nested submenus when clicking outside of them.
       document.addEventListener('click', function () {
-        // Only remove 'show' from nested dropdown menus (not the main one)
         document.querySelectorAll('.dropdown-submenu .dropdown-menu.show').forEach(function (submenu) {
           submenu.classList.remove('show');
         });
