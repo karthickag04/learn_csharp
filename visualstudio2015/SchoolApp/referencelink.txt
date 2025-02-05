@@ -11,3 +11,7 @@ conversation on dropdown with submenu
 
 https://chatgpt.com/share/679ca88e-8558-800b-bdbc-326eefd6b772
 
+
+for select implementation with ID for report generation and generate pdf report implementation
+
+https://chatgpt.com/share/67a33662-3c4c-800b-8f01-39fc334804f0
