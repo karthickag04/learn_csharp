@@ -1,0 +1,15 @@
+D:\learn_csharp\VSCODE\ConsoleAppSessions\oopsdemo\bin\Debug\net9.0\oopsdemo.exe
+D:\learn_csharp\VSCODE\ConsoleAppSessions\oopsdemo\bin\Debug\net9.0\oopsdemo.deps.json
+D:\learn_csharp\VSCODE\ConsoleAppSessions\oopsdemo\bin\Debug\net9.0\oopsdemo.runtimeconfig.json
+D:\learn_csharp\VSCODE\ConsoleAppSessions\oopsdemo\bin\Debug\net9.0\oopsdemo.dll
+D:\learn_csharp\VSCODE\ConsoleAppSessions\oopsdemo\bin\Debug\net9.0\oopsdemo.pdb
+D:\learn_csharp\VSCODE\ConsoleAppSessions\oopsdemo\obj\Debug\net9.0\oopsdemo.GeneratedMSBuildEditorConfig.editorconfig
+D:\learn_csharp\VSCODE\ConsoleAppSessions\oopsdemo\obj\Debug\net9.0\oopsdemo.AssemblyInfoInputs.cache
+D:\learn_csharp\VSCODE\ConsoleAppSessions\oopsdemo\obj\Debug\net9.0\oopsdemo.AssemblyInfo.cs
+D:\learn_csharp\VSCODE\ConsoleAppSessions\oopsdemo\obj\Debug\net9.0\oopsdemo.csproj.CoreCompileInputs.cache
+D:\learn_csharp\VSCODE\ConsoleAppSessions\oopsdemo\obj\Debug\net9.0\oopsdemo.sourcelink.json
+D:\learn_csharp\VSCODE\ConsoleAppSessions\oopsdemo\obj\Debug\net9.0\oopsdemo.dll
+D:\learn_csharp\VSCODE\ConsoleAppSessions\oopsdemo\obj\Debug\net9.0\refint\oopsdemo.dll
+D:\learn_csharp\VSCODE\ConsoleAppSessions\oopsdemo\obj\Debug\net9.0\oopsdemo.pdb
+D:\learn_csharp\VSCODE\ConsoleAppSessions\oopsdemo\obj\Debug\net9.0\oopsdemo.genruntimeconfig.cache
+D:\learn_csharp\VSCODE\ConsoleAppSessions\oopsdemo\obj\Debug\net9.0\ref\oopsdemo.dll
