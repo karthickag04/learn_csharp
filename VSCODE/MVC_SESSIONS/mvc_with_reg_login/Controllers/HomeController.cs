@@ -1,17 +1,20 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using mvc_with_reg_login.Models;
+using mvc_with_reg_login.Data;
 
 namespace mvc_with_reg_login.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+     private readonly ILogger<HomeController> _logger;
+          private readonly AppDbContext _context;
 
-    public HomeController(ILogger<HomeController> logger)
-    {
-        _logger = logger;
-    }
+        public HomeController(ILogger<HomeController> logger, AppDbContext context)
+        {
+            _logger = logger;
+            _context = context;
+        }
 
     public IActionResult Index()
     {
@@ -35,6 +38,9 @@ public class HomeController : Controller
         {
             // Save the user to the database or perform any other action
             // Redirect to a success page or another action
+            _context.RegisterEntityModels.Add(model);  // Save the RegisterViewModel (without ConfirmPassword)
+            _context.SaveChanges();
+            _logger.LogInformation("Registeration Completed successfully....");
             return RedirectToAction("Index");
         }
         return View(model);
