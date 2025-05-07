@@ -13,7 +13,7 @@ namespace mvc_with_reg_login.Data
         {
         }
 
-        public DbSet<RegisterEntityModel> RegisterEntityModels { get; set; } = null!;
+        public DbSet<RegisterEntityModel> tbl_Users { get; set; } = null!;
     }
    
 }

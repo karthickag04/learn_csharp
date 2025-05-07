@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("mvc_with_reg_login")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c92fbe65a9a57ecfcd5ee2f58ccb910567c6976d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0031ed8318868910fe37f2b4ee0fe9f68393b50")]
 [assembly: System.Reflection.AssemblyProductAttribute("mvc_with_reg_login")]
 [assembly: System.Reflection.AssemblyTitleAttribute("mvc_with_reg_login")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

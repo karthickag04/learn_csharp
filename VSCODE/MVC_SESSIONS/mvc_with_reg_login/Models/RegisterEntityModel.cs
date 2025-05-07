@@ -6,17 +6,17 @@ namespace mvc_with_reg_login.Models
     public class RegisterEntityModel
     {
         // Unique identifier for the user
-        public int Id { get; set; }
+        public int Id { get; set; } 
 
         // First name is required
         [Required(ErrorMessage = "First name is required.")]
         [StringLength(50, ErrorMessage = "First name cannot exceed 50 characters.")]
-        public string FirstName { get; set; }
+        public string First_Name { get; set; }
 
         // Last name is required
         [Required(ErrorMessage = "Last name is required.")]
         [StringLength(50, ErrorMessage = "Last name cannot exceed 50 characters.")]
-        public string LastName { get; set; }
+        public string l_Name { get; set; }
 
         // Email is required and must be in a valid email format
         [Required(ErrorMessage = "Email is required.")]

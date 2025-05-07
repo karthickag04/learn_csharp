@@ -38,7 +38,7 @@ public class HomeController : Controller
         {
             // Save the user to the database or perform any other action
             // Redirect to a success page or another action
-            _context.RegisterEntityModels.Add(model);  // Save the RegisterViewModel (without ConfirmPassword)
+            _context.tbl_Users.Add(model);  // Save the RegisterViewModel (without ConfirmPassword)
             _context.SaveChanges();
             _logger.LogInformation("Registeration Completed successfully....");
             return RedirectToAction("Index");
