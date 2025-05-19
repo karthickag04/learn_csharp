@@ -1,2 +1,5 @@
 Chat refference for migrations using vscode under entityframeworkcore
 https://chatgpt.com/share/681b016d-f960-800b-94da-c1d79c1f3f10
+
+Linq Queris
+https://chatgpt.com/share/682aeaaa-5378-800b-ba59-b7a3cb97a30e
